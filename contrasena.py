@@ -1,6 +1,6 @@
 """
-Clase Contrasena
-Genera y valida contraseñas aleatorias.
+Archivo: contrasena.py
+Clase encargada de generar y validar contraseñas.
 """
 
 import random
@@ -14,6 +14,7 @@ from excepciones import (
 
 class Contrasena:
 
+    # Caracteres especiales permitidos por el enunciado
     CARACTERES_ESPECIALES = "¿¡?=)(/¨*+-%&$#!"
 
     def __init__(self, longitud):
@@ -22,22 +23,31 @@ class Contrasena:
 
     def generar(self):
         """
-        Genera una contraseña completamente aleatoria.
+        Genera una contraseña completamente aleatoria
+        sin caracteres repetidos.
         """
 
+        # Validar longitud mínima
         if self.longitud < 8:
             raise LongitudInvalidaError()
 
+        # Todos los caracteres disponibles
         caracteres = (
             string.ascii_letters +
             string.digits +
             self.CARACTERES_ESPECIALES
         )
 
-        self.contrasena = ""
+        # Validar que existan suficientes caracteres únicos
+        if self.longitud > len(caracteres):
+            raise LongitudInvalidaError(
+                "La longitud solicitada es demasiado grande."
+            )
 
-        for _ in range(self.longitud):
-            self.contrasena += random.choice(caracteres)
+        # Generar contraseña sin caracteres repetidos
+        self.contrasena = "".join(
+            random.sample(caracteres, self.longitud)
+        )
 
         return self.contrasena
 
@@ -46,39 +56,50 @@ class Contrasena:
         Verifica que la contraseña cumpla todas las condiciones.
         """
 
-        texto = self.contrasena
-
-        if len(texto) < 8:
+        if len(self.contrasena) < 8:
             raise ContrasenaInvalidaError(
                 "La contraseña tiene menos de 8 caracteres."
             )
 
-        if len(set(texto)) != len(texto):
+        # No debe tener caracteres repetidos
+        if len(set(self.contrasena)) != len(self.contrasena):
             raise ContrasenaInvalidaError(
                 "La contraseña tiene caracteres repetidos."
             )
 
-        if not any(c.isupper() for c in texto):
+        # Debe contener una mayúscula
+        if not any(c.isupper() for c in self.contrasena):
             raise ContrasenaInvalidaError(
-                "Debe contener al menos una letra mayúscula."
+                "La contraseña debe contener al menos una letra mayúscula."
             )
 
-        if not any(c.islower() for c in texto):
+        # Debe contener una minúscula
+        if not any(c.islower() for c in self.contrasena):
             raise ContrasenaInvalidaError(
-                "Debe contener al menos una letra minúscula."
+                "La contraseña debe contener al menos una letra minúscula."
             )
 
-        if not any(c.isdigit() for c in texto):
+        # Debe contener un número
+        if not any(c.isdigit() for c in self.contrasena):
             raise ContrasenaInvalidaError(
-                "Debe contener al menos un número."
+                "La contraseña debe contener al menos un número."
             )
 
+        # Debe contener un carácter especial
         if not any(
             c in self.CARACTERES_ESPECIALES
-            for c in texto
+            for c in self.contrasena
         ):
             raise ContrasenaInvalidaError(
-                "Debe contener al menos un carácter especial."
+                "La contraseña debe contener al menos un carácter especial."
             )
 
         return True
+
+    def mostrar(self):
+        """
+        Muestra la contraseña generada.
+        """
+
+        print("\nContraseña generada:")
+        print(self.contrasena)
