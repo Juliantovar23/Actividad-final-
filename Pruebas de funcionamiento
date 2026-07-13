@@ -1,0 +1,173 @@
+==================================================
+      CAZADOR DE CONTRASEÑAS
+==================================================
+
+Ronda 1
+Ingrese la longitud de la contraseña: 8
+
+Contraseña generada:
+-M¡(/WpE
+
+❌ La contraseña debe contener al menos un número.
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Maldito
+Puntos ronda  : -20
+Puntaje total : -20
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 2
+Ingrese la longitud de la contraseña: 9
+
+Contraseña generada:
+nPTdOQr/*
+
+❌ La contraseña debe contener al menos un número.
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Maldito
+Puntos ronda  : -20
+Puntaje total : -40
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 3
+Ingrese la longitud de la contraseña: 12
+
+Contraseña generada:
+0Ax2ZOmzE4q8
+
+❌ La contraseña debe contener al menos un carácter especial.
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Maldito
+Puntos ronda  : -20
+Puntaje total : -60
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 4
+Ingrese la longitud de la contraseña: 13
+
+Contraseña generada:
+kHhAN9Mbu3¡%z
+
+✅ Contraseña válida
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Legendario
+Puntos ronda  : 50
+Puntaje total : -10
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 5
+Ingrese la longitud de la contraseña: 11
+
+Contraseña generada:
+=b/VnX0*#(F
+
+✅ Contraseña válida
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Común
+Puntos ronda  : 10
+Puntaje total : 0
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 6
+Ingrese la longitud de la contraseña: 8
+
+Contraseña generada:
+!)ATz9wI
+
+✅ Contraseña válida
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Legendario
+Puntos ronda  : 50
+Puntaje total : 50
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 7
+Ingrese la longitud de la contraseña: 12
+
+Contraseña generada:
+ht=Ufa+*9V¿j
+
+✅ Contraseña válida
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Legendario
+Puntos ronda  : 50
+Puntaje total : 100
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 8
+Ingrese la longitud de la contraseña: 6
+
+❌ La longitud debe ser mayor o igual a 8.
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Maldito
+Puntos ronda  : -20
+Puntaje total : 80
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 9
+Ingrese la longitud de la contraseña: 8
+
+Contraseña generada:
+uOAw)Nk¡
+
+❌ La contraseña debe contener al menos un número.
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Maldito
+Puntos ronda  : -20
+Puntaje total : 60
+
+¿Desea jugar otra ronda? (S/N): s
+
+Ronda 10
+Ingrese la longitud de la contraseña: 8
+
+Contraseña generada:
+=4¨NUbSp
+
+✅ Contraseña válida
+
+-----------------------------------
+Resultado
+-----------------------------------
+Tipo de cofre : Legendario
+Puntos ronda  : 50
+Puntaje total : 110
+
+¿Desea jugar otra ronda? (S/N): n
+
+Juego terminado.
+Puntaje final: 110
