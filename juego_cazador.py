@@ -1,8 +1,3 @@
-"""
-Clase JuegoCazador
-Controla el desarrollo del juego.
-"""
-
 from contrasena import Contrasena
 from cofre import Cofre
 from excepciones import (
@@ -10,7 +5,6 @@ from excepciones import (
     DatoNoNumericoError,
     ContrasenaInvalidaError
 )
-
 
 class JuegoCazador:
 

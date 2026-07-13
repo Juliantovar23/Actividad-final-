@@ -1,7 +1,3 @@
-"""
-Clase Cofre
-Representa los diferentes tipos de cofres del juego.
-"""
 
 import random
 
@@ -13,10 +9,7 @@ class Cofre:
         self.puntos = 0
 
     def abrir(self, contrasena_valida):
-        """
-        Si la contraseña es válida, abre un cofre aleatorio.
-        Si es inválida, abre un cofre maldito.
-        """
+
 
         if contrasena_valida:
 
@@ -36,7 +29,6 @@ class Cofre:
         return self.tipo, self.puntos
 
     def mostrar(self):
-        """Muestra la información del cofre."""
 
         print("\n" + "=" * 35)
         print("COFRE OBTENIDO")

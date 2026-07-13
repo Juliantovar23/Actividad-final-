@@ -1,7 +1,4 @@
-"""
-Archivo: contrasena.py
-Clase encargada de generar y validar contraseñas.
-"""
+
 
 import random
 import string
@@ -22,10 +19,7 @@ class Contrasena:
         self.contrasena = ""
 
     def generar(self):
-        """
-        Genera una contraseña completamente aleatoria
-        sin caracteres repetidos.
-        """
+
 
         # Validar longitud mínima
         if self.longitud < 8:
@@ -41,7 +35,6 @@ class Contrasena:
         # Validar que existan suficientes caracteres únicos
         if self.longitud > len(caracteres):
             raise LongitudInvalidaError(
-                "La longitud solicitada es demasiado grande."
             )
 
         # Generar contraseña sin caracteres repetidos
@@ -52,9 +45,7 @@ class Contrasena:
         return self.contrasena
 
     def validar(self):
-        """
-        Verifica que la contraseña cumpla todas las condiciones.
-        """
+
 
         if len(self.contrasena) < 8:
             raise ContrasenaInvalidaError(
@@ -97,9 +88,6 @@ class Contrasena:
         return True
 
     def mostrar(self):
-        """
-        Muestra la contraseña generada.
-        """
 
         print("\nContraseña generada:")
         print(self.contrasena)

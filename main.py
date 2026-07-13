@@ -1,8 +1,3 @@
-"""
-Archivo principal del proyecto
-Juego: Cazador de Contraseñas
-"""
-
 from juego_cazador import JuegoCazador
 
 
