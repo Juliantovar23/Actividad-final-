@@ -4,15 +4,14 @@ principios de aleatoriedad, validación estricta y manejo de excepciones.
 
 El programa debe generar contraseñas completamente aleatorias y 
 verificar que cumplan las siguientes condiciones obligatorias: 
-• Longitud definida por el usuario (mínimo 8 caracteres). 
 
-• Debe contener al menos: 
-• una letra mayúscula, 
-• una letra minúscula, 
-• un número, 
-• un carácter especial de esta lista: 
-• ¿¡?=)(/¨*+-%&$#!. 
-• No debe tener caracteres repetidos. 
+Longitud definida por el usuario (mínimo 8 caracteres). 
+Debe contener al menos: 
+-una letra mayúscula 
+-una letra minúscula 
+-un número 
+-un carácter especial de esta lista:¿¡?=)(/¨*+-%&$#!. 
+-No debe tener caracteres repetidos. 
 
 El juego debe estar estructurado obligatoriamente en Programación 
 Orientada a Objetos, incluyendo al menos las siguientes clases: 
