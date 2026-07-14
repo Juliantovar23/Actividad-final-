@@ -7,7 +7,6 @@ verificar que cumplan las siguientes condiciones obligatorias:
 
 # Longitud definida por el usuario (mínimo 8 caracteres). 
 Debe contener al menos: 
-
 - una letra mayúscula
 - una letra minúscula
 - un número
