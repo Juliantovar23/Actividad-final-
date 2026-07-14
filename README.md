@@ -9,23 +9,24 @@ verificar que cumplan las siguientes condiciones obligatorias:
 Debe contener al menos: 
 
 - una letra mayúscula
-- 
--una letra minúscula
-
--un número 
-
--un carácter especial de esta lista:¿¡?=)(/¨*+-%&$#!. 
-
--No debe tener caracteres repetidos. 
+- una letra minúscula
+- un número
+- un carácter especial de esta lista:¿¡?=)(/¨*+-%&$#!.
+- No debe tener caracteres repetidos. 
 
 El juego debe estar estructurado obligatoriamente en Programación 
 Orientada a Objetos, incluyendo al menos las siguientes clases: 
-Clase Contraseña: encargada de generar y validar contraseñas. 
-Clase Cofre: representa los cofres que se abren dependiendo de la 
+# Clase Contraseña:
+encargada de generar y validar contraseñas. 
+# Clase Cofre:
+representa los cofres que se abren dependiendo de la 
 calidad de la contraseña; pueden ser: 
-• Común (+10 puntos) 
-• Raro (+25 puntos) 
-• Legendario (+50 puntos) 
-• Maldito (–20 puntos cuando la contraseña es inválida) 
-Clase JuegoCazador: administra el puntaje, controla el flujo del juego, 
+- Común (+10 puntos)
+- raro (+25 puntos)
+- Legendario (+50 puntos)
+- Maldito (–20 puntos cuando la contraseña es inválida)
+
+   
+# Clase JuegoCazador:
+administra el puntaje, controla el flujo del juego, 
 maneja las excepciones y permite que el usuario juegue varias rondas.
